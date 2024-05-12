@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Requests-Share and Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="sticky-header">
+        <div class="header-container">
+            <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+            <div class="nav-links">
+                <a href="../home/home.html">Home</a>
+                <a href="../report/report.html">Report</a>
+                <a href="../categories/categories.html">Categories</a>
+                <a href="../organization/organization.html">Organizations</a>
+                <a href="../account/account.html">My Account</a>
+                <div class="notification-icon" id="notification-icon">
+                    <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                    <span class="notification-count" id="notificationCount">2</span>
+                    <div class="notification-menu" id="notificationMenu">
+                        <div class="notification-menu-item unread"> Notification 1:</div>
+                        <div class="notification-menu-item">Your delivery driver has arrived and is ready to collect your donation. Thank you!</div>
+                        <div class="notification-menu-item unread"> Notification 2:</div>
+                        <div class="notification-menu-item">We're pleased to inform you that your donation has successfully reached its destination</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Blood Donation Requests</h1>
+        <div class="filter">
+            <input type="text" id="searchInput" placeholder="Search by keyword">
+            <button id="filterButton" class="filter-button">Filter</button>
+            <div id="filterOptions" class="filter-options">
+                <label for="hospital">Hospital:</label>
+                <select id="hospital">
+                    <option value="">All</option>
+                    <option value="City Hospital">City Hospital</option>
+                    <option value="Hope Medical Center">Hope Medical Center</option>
+                    <option value="Community Center">Community Center</option>
+                    <option value="Sunrise Hospital">Sunrise Hospital</option>
+                    <option value="Thalassemia Center">Thalassemia Center</option>
+                </select>
+                <label for="governorate">Governorate:</label>
+                <select id="governorate">
+                    <option value="">All</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Giza">Giza</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Luxor">Luxor</option>
+                    <option value="Aswan">Aswan</option>
+                </select>
+                <label for="area">Area:</label>
+                <select id="area">
+                    <option value="">All</option>
+                    <option value="Nasr City">Nasr City</option>
+                    <option value="Dokki">Dokki</option>                  
+                    <option value="Sidi Gaber">Sidi Gaber</option>  
+                    <option value="Al-Karnak">Al-Karnak</option>
+                    <option value="Aswan City">Aswan City</option>                                   
+                </select>
+                <label for="urgency">Urgency:</label>
+                <select id="urgency">
+                    <option value="">All</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                    <option value="Critical">Critical</option>
+                </select>
+                <button id="applyFilterButton" class="apply-filter-button">Apply Filter</button>
+            </div>
+        </div>  
+        <div id="requestsList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
