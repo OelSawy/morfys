@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Register-Share and Carer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-storage-compat.js"></script>
+</head>
+
+<body>
+    <div class="register-container">
+        <div style="display: flex; justify-content: center;"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="150px" style="border-radius: 50%;"></div>
+        <div class="register-box">
+            <h2 class="register-heading">Teacher Registration - Share and Care</h2>
+            <form id="teacherRegisterForm">
+                <div class="form-group">
+                    <label for="teacherSubjects">Subjects You Can Teach:</label>
+                    <input type="text" id="teacherSubjects" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="proBonoClasses">Number of Pro-Bono Classes You Can Teach:</label>
+                    <input type="number" id="proBonoClasses" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="privateTutoring">Number of Students you Can Give Private Tutoring:</label>
+                    <input type="number" id="privateTutoring" required>
+                </div>
+
+                <div class="form-group upload-section">
+                    <h3 class="upload-header">Please Upload Your Teaching Degree</h3>
+                    <input type="file" id="documentUpload" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <button type="submit" class="register-btn">Register</button>
+                <button id="go-back" class="go-back-btn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js" type="module" defer></script>
+</body>
+
+</html>
