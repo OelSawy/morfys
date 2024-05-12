@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3cde0; /* Light blue background */
+    color: #333; /* Dark text color */
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    margin-top: 50px;
+}
+
+.title {
+    color: #011f4b; 
+    text-align: center;
+}
+
+.pickup-form, .donation-form {
+    margin-bottom: 30px;
+}
+
+
+
+.go-back-btn {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto 0; /* Add margin for spacing and center the button horizontally */
+    display: block; /* Ensure the button takes the full width */
+}
+
+.go-back-btn:hover {
+    background-color: #FF0000;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="datetime-local"], input[type="text"], input[type="number"], select {
+    width: calc(100% - 22px); /* Adjusted width to accommodate border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #011f4b; 
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #0099cc; 
+}
+
+#eta {
+    margin-top: 15px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom:20px ;
+}
+
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #03396c;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.notification-count {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.notification-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.notification-menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #f0f0f0; /* Background color for unread notifications */
+    color: #000000;
+}
+
+.notification-menu-item:last-child {
+    border-bottom: none;
+}
+
+.notification-menu-item.unread {
+    background-color: #cddeeb; /* Background color for unread notifications */
+    color: #000000;
+}
+

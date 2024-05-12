@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Supplies Donation Requests-Share and Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="sticky-header">
+        <div class="header-container">
+            <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+            <div class="nav-links">
+                <a href="../home/home.html">Home</a>
+                <a href="../report/report.html">Report</a>
+                <a href="../categories/categories.html">Categories</a>
+                <a href="../organization/organization.html">Organizations</a>
+                <a href="../account/account.html">My Account</a>
+                <div class="notification-icon" id="notification-icon">
+                    <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                    <span class="notification-count" id="notificationCount">2</span>
+                    <div class="notification-menu" id="notificationMenu">
+                        <div class="notification-menu-item unread"> Notification 1:</div>
+                        <div class="notification-menu-item">Your delivery driver has arrived and is ready to collect your donation. Thank you!</div>
+                        <div class="notification-menu-item unread"> Notification 2:</div>
+                        <div class="notification-menu-item">We're pleased to inform you that your donation has successfully reached its destination</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <div class="container">
+        <h1>Medical Supplies Donation Requests</h1>
+        <div class="filter">
+            <input type="text" id="searchInput" placeholder="Search by keyword">
+            <button id="filterButton" class="filter-button">Filter</button>
+            <div id="filterOptions" class="filter-options">
+                <label for="medicalEquipments">Medical Equipments:</label>
+                <select id="medicalEquipments">
+                    <option value="">All</option>
+                    <option value="Masks">Masks</option>
+                    <option value="Gloves">Gloves</option>
+                    <option value="Ventilators">Ventilators</option>
+                    <option value="First Aid Kits">First Aid Kits</option> 
+                    <option value="Basic Medical Supplies">Basic Medical Supplies</option> 
+                    <option value="Essential Medical Supplies">Essential Medical Supplies</option> 
+                </select>
+                <label for="medicalDevices">Medical Devices:</label>
+                <select id="medicalDevices">
+                    <option value="">All</option>
+                    <option value="Pulse Oximeter">Pulse Oximeter</option>
+                    <option value="Blood Pressure Monitor">Blood Pressure Monitor</option>
+                    <option value="Orthopedic Braces">Orthopedic Braces</option>
+                    <option value="Walker">Walker</option>
+                    <option value="Portable Ultrasound">Portable Ultrasound</option>
+                    <option value="Stethoscope">Stethoscope</option>
+                </select>
+                <label for="medications">Medications:</label>
+                <select id="medications">
+                    <option value="">All</option>
+                    <option value="Antibiotics">Antibiotics</option>
+                    <option value="Antivirals">Antivirals</option>
+                    <option value="Fever Reducers">Fever Reducers</option>
+                    <option value="Antiviral Drugs">Antiviral Drugs</option>
+                    <option value="Immune Boosters">Immune Boosters</option> 
+                </select>
+                <label for="medicalUse">Medical Use:</label>
+                <select id="medicalUse">
+                    <option value="">All</option>
+                    <option value="Treatment of COVID-19 patients">Treatment of COVID-19 patients</option>
+                    <option value="Protection of healthcare workers">Protection of healthcare workers</option>
+                </select>
+                <button id="applyFilterButton" class="apply-filter-button">Apply Filter</button>
+            </div>
+        </div>  
+        <div id="requestsList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

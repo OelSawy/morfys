@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Cases-Share and Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sticky-header">
+        <div class="header-container">
+            <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+            <div class="nav-links">
+                <a href="../home/home.html">Home</a>
+                <a href="../report/report.html">Report</a>
+                <a href="../categories/categories.html">Categories</a>
+                <a href="../organization/organization.html">Organizations</a>
+                <a href="../account/account.html">My Account</a>
+                <div class="notification-icon" id="notification-icon">
+                    <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                    <span class="notification-count" id="notificationCount">2</span>
+                    <div class="notification-menu" id="notificationMenu">
+                        <div class="notification-menu-item unread"> Notification 1:</div>
+                        <div class="notification-menu-item">Your delivery driver has arrived and is ready to collect your donation. Thank you!</div>
+                        <div class="notification-menu-item unread"> Notification 2:</div>
+                        <div class="notification-menu-item">We're pleased to inform you that your donation has successfully reached its destination</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Medical Cases</h1>
+        <div class="filter">
+            <input type="text" id="searchInput" placeholder="Search by keyword">
+            <button id="filterButton" class="filter-button">Filter</button>
+            <div id="filterOptions" class="filter-options">
+                <label for="specialty">Specialty:</label>
+                <select id="specialty">
+                    <option value="">All</option>
+                    <option value="General Surgery">General Surgery</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Neurosurgery">Neurosurgery</option>
+                    <option value="Endocrinology">Endocrinology</option>
+                    <option value="Pulmonology">Pulmonology</option>
+                    <option value="Nephrology">Nephrology</option>
+                </select>
+                <label for="organization">Organization:</label>
+                <select id="organization">
+                    <option value="">All</option>
+                    <option value="El Salam Hospital">El Salam Hospital</option>
+                    <option value="Heart Care Center">Heart Care Center</option>
+                    <option value="Neurocare Hospital">Neurocare Hospital</option>
+                    <option value="Diabetes Care Clinic">Diabetes Care Clinic</option>
+                    <option value="Lung Health Center">Lung Health Center</option>
+                    <option value="Kidney Care Institute">Kidney Care Institute</option>
+                </select>
+                <label for="area">Area:</label>
+                <select id="area">
+                    <option value="">All</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Luxor">Luxor</option>
+                    <option value="Aswan">Aswan</option>
+                    <option value="Sharm El Sheikh">Sharm El Sheikh</option>
+                    <option value="Hurghada">Hurghada</option>
+                </select>
+                <label for="governorate">Governorate:</label>
+                <select id="governorate">
+                    <option value="">All</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Luxor">Luxor</option>
+                    <option value="Aswan">Aswan</option>
+                    <option value="South Sinai">South Sinai</option>
+                    <option value="Red Sea">Red Sea</option>
+                </select>
+                <button id="applyFilterButton" class="apply-filter-button">Apply Filter</button>
+                <button id="go-back" class="go-back-btn">Go Back</button>
+
+            </div>
+        </div>  
+        <div id="medicalCasesList"></div>
+        <button id="go-back" class="go-back-btn">Go Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

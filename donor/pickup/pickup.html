@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Pickup and Donation-Share and Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> <div class="sticky-header">
+    <div class="header-container">
+        <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+        <div class="nav-links">
+            <a href="../home/home.html">Home</a>
+            <a href="../report/report.html">Report</a>
+            <a href="../categories/categories.html">Categories</a>
+            <a href="../organization/organization.html">Organizations</a>
+            <a href="../account/account.html">My Account</a>
+            <div class="notification-icon" id="notification-icon">
+                <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                <span class="notification-count" id="notificationCount">2</span>
+                <div class="notification-menu" id="notificationMenu">
+                    <div class="notification-menu-item unread"> Notification 1:</div>
+                    <div class="notification-menu-item">Your delivery driver has arrived and is ready to collect your donation. Thank you!</div>
+                    <div class="notification-menu-item unread"> Notification 2:</div>
+                    <div class="notification-menu-item">We're pleased to inform you that your donation has successfully reached its destination</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <h1 class="title">Schedule Pickup</h1>
+        <div class="pickup-form">
+            <label for="transportation-type">Transportation Selection for Donation Pickup:</label>
+            <select id="transportation-type">
+                <option value="car">Car</option>
+                <option value="truck">Truck</option>
+                <option value="motorcycle">Motorcycle</option>
+            </select>
+            <label for="pickup-time">Schedule Date for Donation Pickup:</label>
+            <input type="datetime-local" id="pickup-time">
+            
+            <!-- Address section -->
+            <label for="street-no">Street No.:</label>
+            <input type="text" id="street-no" placeholder="Enter street number">
+            <label for="street-name">Street Name:</label>
+            <input type="text" id="street-name" placeholder="Enter street name">
+            <label for="apt-no">Apartment/Unit No.:</label>
+            <input type="text" id="apt-no" placeholder="Enter apartment/unit number">
+            <label for="area">Area:</label>
+            <input type="text" id="area" placeholder="Enter area">
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="Enter city">
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" placeholder="Enter postal code">
+            <div class="donation-form">
+                <label for="item-quantity">Quantity:</label>
+                <input type="number" id="item-quantity" min="1" value="1">
+            </div>
+            <!-- End of Address section -->
+            <button id="view-eta-btn">View Estimated Time of Arrival</button>
+            <div id="eta"></div>
+            <button id="donate-btn">Donate</button>
+            <button id="go-back" class="go-back-btn">Cancel</button>
+
+        </div>
+
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
