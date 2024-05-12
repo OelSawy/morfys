@@ -1,0 +1,144 @@
+/* Common styles */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #03396c;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 50px; /* Increased margin between header and buttons */
+    margin-top: 30px; /* Added margin between header and top buttons */
+    color: #03396c;
+}
+
+.reports-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reports-list li {
+    background-color: #6497b1;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.reports-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #0099cc;
+}
+
+.reports-list h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.reports-list p {
+    font-size: 16px;
+}
+
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #03396c;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.notification-count {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.notification-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.notification-menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #f0f0f0; /* Background color for unread notifications */
+    color: #000000;
+}
+
+.notification-menu-item:last-child {
+    border-bottom: none;
+}
+
+.notification-menu-item.unread {
+    background-color: #cddeeb; /* Background color for unread notifications */
+    color: #000000;
+}
