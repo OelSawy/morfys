@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3cde0; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full vertical centering */
+  }
+  
+  .container {
+    max-width: 600px; /* Adjusted container width */
+    margin: 50px auto; /* Center container horizontally */
+    background-color: #fff; /* White background for container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 40px; /* Uniform padding */
+  }
+  
+  h1 {
+    color: #333; /* Darker color for text */
+    text-align: left; /* Left-align heading */
+    margin-bottom: 20px; /* Space between heading and map */
+  }
+  
+  #map {
+    height: 400px; /* Map height */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure the map stays within boundaries */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333; /* Consistent text color */
+    text-align: left; /* Left-align labels */
+  }
+  
+  input {
+    width: calc(100% - 22px); /* Adjusted width to fit within borders */
+    padding: 10px; /* Consistent padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  button {
+    background-color: #011f4b; /* Dark blue for button */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    width: 100%; /* Button fills the form's width */
+  }
+  
+  button:hover {
+    background-color: #0099cc; /* Lighter blue on hover */
+  }
+  

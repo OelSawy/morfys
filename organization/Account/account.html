@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sticky-header">
+        <div class="header-container">
+            <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+            <div class="nav-links">
+                <a href="../home/home.html">Home</a>
+                <a href="../report/report.html">Report</a>
+                <a href="../DonationPost/DonationPost.html">Post a request</a>
+                <a href="../account/account.html">My Account</a>
+                <div class="notification-icon" id="notification-icon">
+                    <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                    <span class="notification-count" id="notificationCount">2</span>
+                    <div class="notification-menu" id="notificationMenu">
+                        <div class="notification-menu-item unread"> Notification 1:</div>
+                        <div class="notification-menu-item"id="notification-menu-item">New donor fulfilled a post</div>
+                        <div class="notification-menu-item unread"> Notification 2:</div>
+                        <div class="notification-menu-item"id="notification-menu-item">Donation post approved</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="register-container">
+        <div class="register-box">
+            <h2 class="register-heading">Account Management</h2>
+            <form id="registerForm" action="upload_documents/upload.html">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" value="Nora" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName"value="Kamal" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender"   required>
+                     <option value="female">Female</option>
+                     <option value="male">Male</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" value="nk@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" value="secret" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="text" id="contactNumber"value="01234567890" required>
+                </div>
+                <div class="form-group">
+                    <label for="organizationName">Organization Name:</label>
+                    <input type="text" id="organizationName" value="Pet Hub" required>
+                </div>
+               
+                <div class="form-group">
+                    <label for="organizationType">Organization Type:</label>
+                    <input type="text" id="organizationType" value="NPO" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="organizationaddress">Organization Address:</label>
+                    <input type="text" id="organizationaddress" value="Street 9" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="area">Area:</label>
+                    <input type="text" id="area" value="Maadi"required>
+                </div>
+                <div class="form-group">
+                    <label for="governorate">Governorate:</label>
+                    <input type="text" id="governorate" value="Cairo" required>
+                </div>
+
+                
+                <div id="donorOptions" class="form-group" style="display: none;">
+                    <label for="donorType">Donor Type:</label>
+                    <select id="donorType">
+                        <option value="normal">Normal Donor</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                </div>
+                <div class="upload-container">
+                        <div class="form-group">
+                            <label for="Verification">Upload Verification:</label>
+                            <input type="file" id="Verification" accept="application/pdf"  value="cc.pdf">
+                        </div><br>
+                </div>
+                <button type="submit" class="register-btn" onclick="Alert()" >Update Account</button>
+                
+                    <button type="submit" class="register-btn" onclick="deleteAccount()" >Delete Account</button>               
+                
+                </form>
+    </div>
+
+    <script src="script.js"></script>
+   
+
+   
+  
+   
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <div class="sticky-header">
+        <div class="header-container">
+            <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+            <div class="nav-links">
+                <a href="../home/home.html">Home</a>
+                <a href="../report/report.html">Report</a>
+                <a href="../DonationPost/DonationPost.html">Post a request</a>
+                <a href="../account/account.html">My Account</a>
+                <div class="notification-icon" id="notification-icon">
+                    <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                    <span class="notification-count" id="notificationCount">2</span>
+                    <div class="notification-menu" id="notificationMenu">
+                        <div class="notification-menu-item unread"> Notification 1:</div>
+                        <div class="notification-menu-item"id="notification-menu-item">New donor fulfilled a post</div>
+                        <div class="notification-menu-item unread"> Notification 2:</div>
+                        <div class="notification-menu-item"id="notification-menu-item">Donation post approved</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Notifications Section -->
+    <div class="container">
+        <h1>Notifications</h1>
+        <div class="section">
+            <div class="request">
+                <div class="request-info">
+                    <div class="request-title">New donor fulfilled a post</div>
+                    <div class="request-description"></div>
+                </div>
+                <div class="request-actions">
+                    <button class="filter-button" onclick="viewDonorDetails()">View Donor Details</button>
+                </div>
+            </div>
+            <div class="request">
+                <div class="request-info">
+                    <div class="request-title">Donation post approved</div>
+                    <div class="request-description"></div>
+                </div>
+                <div class="request-actions">
+                    <button class="filter-button" onclick="viewDetails()">View Details</button>
+                    <button class="filter-button" onclick="deletePost()">Delete Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

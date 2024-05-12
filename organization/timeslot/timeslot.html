@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Time Slot for Drop-off</title>
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="sticky-header">
+    <div class="header-container">
+        <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+        <div class="nav-links">
+            <a href="../home/home.html">Home</a>
+            <a href="../report/report.html">Report</a>
+            <a href="../DonationPost/DonationPost.html">Post a request</a>
+            <a href="../account/account.html">My Account</a>
+            <div class="notification-icon" id="notification-icon">
+                <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                <span class="notification-count" id="notificationCount">2</span>
+                <div class="notification-menu" id="notificationMenu">
+                  <div class="notification-menu-item unread"> Notification 1:</div>
+                  <div class="notification-menu-item"id="notification-menu-item">New donor fulfilled a post</div>
+                  <div class="notification-menu-item unread"> Notification 2:</div>
+                  <div class="notification-menu-item"id="notification-menu-item">Donation post approved</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+  <div class="container">
+    <h1>Choose a Time Slot for Drop-off</h1>
+    <form id="time-slot-form" action="/submit-time-slot" method="post">
+      <div class="form-group">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Select Time Slot:</label>
+        <select id="time" name="time" required>
+          <option value="">--Select--</option>
+          <option value="9am-10am">9am - 10am</option>
+          <option value="10am-11am">10am - 11am</option>
+          <option value="11am-12pm">11am - 12pm</option>
+          <option value="1pm-2pm">1pm - 2pm</option>
+          <option value="2pm-3pm">2pm - 3pm</option>
+          <option value="3pm-4pm">3pm - 4pm</option>
+        </select>
+      </div>
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+</body>
+</html>

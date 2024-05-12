@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3cde0; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full vertical centering */
+  }
+  
+  .container {
+    max-width: 600px; /* Adjusted container width */
+    margin: 50px auto; /* Center container horizontally */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 40px; /* Uniform padding */
+  }
+  
+  h1 {
+    color: #333; /* Darker color for text */
+    text-align: left; /* Left-align heading */
+    margin-bottom: 20px; /* Space between heading and content */
+  }
+  
+  .donation-post {
+    background-color: #f9f9f9; /* Light background for posts */
+    padding: 20px; /* Padding around content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-bottom: 20px; /* Space between posts */
+  }
+  
+  button {
+    background-color: #011f4b; /* Dark blue for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  button:hover {
+    background-color: #0099cc; /* Lighter blue on hover */
+  }
+  
+  .delete-post {
+    background-color: #e53935; /* Red background for delete button */
+  }
+  
+  .delete-post:hover {
+    background-color: #c62828; /* Darker red on hover */
+  }
+  
+  .edit-post {
+    margin-right: 10px; /* Space between edit and delete buttons */
+  }
+  
+  #edit-post-form {
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px; /* Padding */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above form */
+  }
+  

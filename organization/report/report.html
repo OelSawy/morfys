@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report-Share and Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sticky-header">
+        <div class="header-container">
+            <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+            <div class="nav-links">
+                <a href="../home/home.html">Home</a>
+                <a href="../report/report.html">Report</a>
+                <a href="../categories/categories.html">Categories</a>
+                <a href="../organization/organization.html">Organizations</a>
+                <a href="../account/account.html">My Account</a>
+                <div class="notification-icon" id="notification-icon">
+                    <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                    <span class="notification-count" id="notificationCount">2</span>
+                    <div class="notification-menu" id="notificationMenu">
+                        <div class="notification-menu-item unread"> Notification 1:</div>
+                  <div class="notification-menu-item"id="notification-menu-item">New donor fulfilled a post</div>
+                  <div class="notification-menu-item unread"> Notification 2:</div>
+                  <div class="notification-menu-item"id="notification-menu-item">Donation post approved</div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Report Page</h1>
+        <form id="reportForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="complaint">Complaint:</label>
+                <textarea id="complaint" name="complaint" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button" onclick="window.location.href='home.html'">Submit</button>
+       
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3cde0; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full vertical centering */
+  }
+  
+  .container {
+    max-width: 600px; /* Adjusted container width */
+    margin: 50px auto; /* Center container horizontally */
+    background-color: #fff; /* White background for container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 40px; /* Uniform padding */
+  }
+  
+  h1 {
+    color: #333; /* Darker color for text */
+    text-align: left; /* Left-align heading */
+    margin-bottom: 20px; /* Space between heading and form */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px; /* Space between label and input */
+    color: #333; /* Consistent text color */
+    text-align: left; /* Left-align labels */
+  }
+  
+  input,
+  select {
+    padding: 10px; /* Consistent padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; /* Full width */
+  }
+  
+  button, .sub {
+    background-color: #011f4b; /* Dark blue for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    width: 100%; /* Button fills the form's width */
+  }
+  
+  button:hover {
+    background-color: #0099cc; /* Lighter blue on hover */
+  }
+
+  #edit-post-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #03396c;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.notification-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.notification-count {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  border-radius: 100%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.notification-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.notification-menu-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #f0f0f0; /* Background color for unread notifications */
+  color: #000000;
+}
+
+.notification-menu-item:last-child {
+  border-bottom: none;
+}
+
+.notification-menu-item.unread {
+  background-color: #cddeeb; /* Background color for unread notifications */
+  color: #000000;
+}

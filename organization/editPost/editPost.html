@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Donation Post</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="sticky-header">
+    <div class="header-container">
+        <a class="logo" href="../home/home.html"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="70px" style="border-radius: 50%;"></a>
+        <div class="nav-links">
+            <a href="../home/home.html">Home</a>
+            <a href="../report/report.html">Report</a>
+            <a href="../DonationPost/DonationPost.html">Post a request</a>
+            <a href="../account/account.html">My Account</a>
+            <div class="notification-icon" id="notification-icon">
+                <i class="fa fa-bell" aria-hidden="true" style="font-size:20px;"></i>
+                <span class="notification-count" id="notificationCount">2</span>
+                <div class="notification-menu" id="notificationMenu">
+                  <div class="notification-menu-item unread"> Notification 1:</div>
+                  <div class="notification-menu-item" id="notification-menu-item">New donor fulfilled a post</div>
+                  <div class="notification-menu-item unread"> Notification 2:</div>
+                  <div class="notification-menu-item" id="notification-menu-item">Donation post approved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Edit Donation Post</h1>
+    <form id="editForm">
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <!-- Other form fields -->
+      <input type="submit"  value="Save Changes">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

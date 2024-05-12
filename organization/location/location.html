@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Location-Share and Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-storage-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; justify-content: center;"><img src="../../assets/images/logo/Beige Minimalist International Volunteer Day Instagram Post With Hands Hearts Illustration (1).png" alt="Share and Care" width="150px" style="border-radius: 50%;"></div>
+        <h1>Organization Location - Share and Care</h1>
+        <div class="form-group">
+            <label for="orgLocation">Organization Location:</label>
+            <div id="map"></div>
+            <input type="text" id="pac-input" placeholder="Search location" required>
+        </div>
+        <form id="orgForm">
+            <div class="form-group">
+                <label for="qualificationDocument">Upload Qualification Document:</label>
+                <input type="file" id="qualificationDocument" name="qualificationDocument" required>
+            </div>
+            <button type="submit" class="register-btn">Submit</button>
+        </form>
+    </div>
+
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZoM8dQ4ASEQsVtZZWYAu9VXsWAlUvqoo&libraries=places"></script>
+    <script src="script.js" type="module" defer></script>
+</body>
+</html>
+
